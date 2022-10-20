@@ -1,13 +1,16 @@
+/* This applies to all elements */
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
 
+/* body background color */
 body {
     background-color: #d9dcd6;
 }
 
+/* This is the style for the header lexical section */
 header {
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -15,15 +18,17 @@ header {
     color: #ffffff;
 }
 
+/* Displaying the h1 as inline (as opposed to the default block, so you can have the the nav next to it. */
 header h1 {
     display: inline-block;
     font-size: 48px;
 }
-
+/* This is used to change the color of just the seo slice of the Horiseon text */
 header h1 .seo {
     color: #d9dcd6;
 }
 
+/* This padds and aligns the nav (thats inside the header element). It floats right with custom font selections */
 header nav {
     padding-top: 15px;
     margin-right: 20px;
@@ -31,25 +36,28 @@ header nav {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 20px;
 }
-
+/* This makes sure that the list elements (links) dont show a dot in front */
 header nav ul {
     list-style-type: none;
 }
+/* By inhibits the list tag default behavior of blocking, as well as putting a margin to the left of each other.
 
+*/
 header nav ul li {
     display: inline-block;
     margin-left: 25px;
 }
-
+/* Ths applies to all of the links themselves */
 a {
     color: #ffffff;
     text-decoration: none;
 }
-
+/* This sets the paragraph font size for the whole document */
 p {
     font-size: 16px;
 }
 
+/* This class gets assigned to the image tag thats inside the figure element */
 .hero {
     height: 800px;
     width: 100%;
@@ -58,23 +66,25 @@ p {
     background-size: cover;
     background-position: center;
 }
-
+/* The float left is used to align the image to the left of the text. It also assigns a margin to the right */
 .float-left {
     float: left;
     margin-right: 25px;
 }
-
+/* The float right is used to align the image to the right of the text. It also assigns a margin to the left. */
 .float-right {
     float: right;
     margin-left: 25px;
 }
-
+/* The content class provides for styling for the section with 3 articles */
 .content {
     width: 75%;
     display: inline-block;
     margin-left: 20px;
 }
-
+/* This ensures the right float behaivior for the articles inside the aside element. Provides margin-right,
+padding. width, height, background and fonts.
+*/
 aside {
     margin-right: 20px;
     padding: 20px;
@@ -85,8 +95,12 @@ aside {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #2589bd;
 }
+/* Original CSS Code Note
+ I consolidated the original the classes benefit-lead, benefit-brand, and benefit-lead  into .benefit
+ Original Code is commented
+*/
 
-.benefit-lead {
+/* .benefit-lead {
     margin-bottom: 32px;
     color: #ffffff;
 }
@@ -99,9 +113,14 @@ aside {
 .benefit-cost {
     margin-bottom: 32px;
     color: #ffffff;
+} */
+/* This is the consolidated (more efficient class) */
+.benefit {
+    margin-bottom: 32px;
+    color: #ffffff;
 }
-
-.benefit-lead h3 {
+/* Original */
+/* .benefit-lead h3 {
     margin-bottom: 10px;
     text-align: center;
 }
@@ -114,9 +133,14 @@ aside {
 .benefit-cost h3 {
     margin-bottom: 10px;
     text-align: center;
+} */
+/* Consolidated */
+.benefit h3 {
+    margin-bottom: 10px;
+    text-align: center;
 }
-
-.benefit-lead img {
+/* Original */
+/* .benefit-lead img {
     display: block;
     margin: 10px auto;
     max-width: 150px;
@@ -132,9 +156,17 @@ aside {
     display: block;
     margin: 10px auto;
     max-width: 150px;
+} */
+/* Consolidated */
+.benefit img {
+    display: block;
+    margin: 10px auto;
+    max-width: 150px;
 }
-
-.search-engine-optimization {
+/* Original CSS  
+Same as above there is redundancy between the .search-engine-optimization, .online-reputation-management, .social-media-marketing
+*/
+/* .search-engine-optimization {
     margin-bottom: 20px;
     padding: 50px;
     height: 300px;
@@ -159,9 +191,19 @@ aside {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #0072bb;
     color: #ffffff;
+} */
+/* Consolidated CSS 
+the section has a class of content, so this applies to those articles (not the articles on the aside)*/
+.content article {
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 300px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #0072bb;
+    color: #ffffff;
 }
-
-.search-engine-optimization img {
+/* Original CSS code */
+/* .search-engine-optimization img {
     max-height: 200px;
 }
 
@@ -171,9 +213,13 @@ aside {
 
 .social-media-marketing img {
     max-height: 200px;
+} */
+/* Consolidated CSS code */
+.content article img {
+    max-height: 200px;
 }
-
-.search-engine-optimization h2 {
+/* Original CSS code */
+/* .search-engine-optimization h2 {
     margin-bottom: 20px;
     font-size: 36px;
 }
@@ -186,8 +232,14 @@ aside {
 .social-media-marketing h2 {
     margin-bottom: 20px;
     font-size: 36px;
+} */
+/* Consolidated CSS Code */
+.content article h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
 }
 
+/* This is the stying for the bottom footer element */
 footer {
     padding: 30px;
     clear: both;

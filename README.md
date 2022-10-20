@@ -45,4 +45,5 @@ MIT License
 	            Footer
 
 ## Notes:
-Please see the comments inside the HTML file for further explanations.
+Please see the comments inside the HTML file for further explanations. 
+Also, added a random favicon.ico with the letter H (for horiseon).
