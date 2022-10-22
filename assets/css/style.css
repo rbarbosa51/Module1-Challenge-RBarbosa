@@ -95,103 +95,27 @@ aside {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #2589bd;
 }
-/* Original CSS Code Note
- I consolidated the original the classes benefit-lead, benefit-brand, and benefit-lead  into .benefit
- Original Code is commented
-*/
 
-/* .benefit-lead {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-
-.benefit-brand {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-
-.benefit-cost {
-    margin-bottom: 32px;
-    color: #ffffff;
-} */
-/* This is the consolidated (more efficient class) */
+/* I consolidated the original the classes benefit-lead, benefit-brand, and benefit-lead  into .benefit
+ This is the consolidated (more efficient class) */
 .benefit {
     margin-bottom: 32px;
     color: #ffffff;
 }
-/* Original */
-/* .benefit-lead h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
 
-.benefit-brand h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.benefit-cost h3 {
-    margin-bottom: 10px;
-    text-align: center;
-} */
 /* Consolidated */
 .benefit h3 {
     margin-bottom: 10px;
     text-align: center;
 }
-/* Original */
-/* .benefit-lead img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
 
-.benefit-brand img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-
-.benefit-cost img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-} */
 /* Consolidated */
 .benefit img {
     display: block;
     margin: 10px auto;
     max-width: 150px;
 }
-/* Original CSS  
-Same as above there is redundancy between the .search-engine-optimization, .online-reputation-management, .social-media-marketing
-*/
-/* .search-engine-optimization {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
 
-.online-reputation-management {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-.social-media-marketing {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-} */
 /* Consolidated CSS 
 the section has a class of content, so this applies to those articles (not the articles on the aside)*/
 .content article {
@@ -202,37 +126,12 @@ the section has a class of content, so this applies to those articles (not the a
     background-color: #0072bb;
     color: #ffffff;
 }
-/* Original CSS code */
-/* .search-engine-optimization img {
-    max-height: 200px;
-}
 
-.online-reputation-management img {
-    max-height: 200px;
-}
-
-.social-media-marketing img {
-    max-height: 200px;
-} */
 /* Consolidated CSS code */
 .content article img {
     max-height: 200px;
 }
-/* Original CSS code */
-/* .search-engine-optimization h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
 
-.online-reputation-management h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
-.social-media-marketing h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-} */
 /* Consolidated CSS Code */
 .content article h2 {
     margin-bottom: 20px;
